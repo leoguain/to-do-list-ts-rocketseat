@@ -1,0 +1,29 @@
+.noTasksContainer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--gray-400);
+  color: var(--gray-300);
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+}
+
+.noTasksContainer > img {
+  width: 3.5rem;
+}
+
+.textsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.noTasksContainer strong {
+  line-height: 1.4;
+}
+
+.noTasksContainer p {
+  line-height: 1.4;
+}

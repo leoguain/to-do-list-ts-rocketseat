@@ -1,0 +1,35 @@
+.tasksInfo {
+  background: var(--gray-600);
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdInfo {
+  display: flex;
+  align-items: center;
+
+  color: var(--blue-500);
+  gap: 0.5rem;
+}
+
+.finishedInfo {
+  align-items: center;
+  display: flex;
+  color: var(--purple-500);
+  gap: 0.5rem;
+}
+
+.tasksInfo strong {
+  font-size: 0.875rem;
+}
+
+.tasksInfo span {
+  box-sizing: initial;
+  display: flex;
+  background: var(--gray-400);
+  border-radius: 999rem;
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.125rem 0.5rem;
+}

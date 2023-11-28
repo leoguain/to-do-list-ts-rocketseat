@@ -1,0 +1,56 @@
+.checkboxContainer {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+.checkboxContainer input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--gray-500);
+  border-radius: 100%;
+  border: 0.125em solid var(--blue-500);
+  cursor: pointer;
+  display: flex;
+  min-width: 1.125rem;
+  transition: 0.1s all;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+  background-color: var(--purple-700);
+  border: 0.125em solid var(--purple-700);
+  display: flex;
+}
+
+.checkboxContainer input[type="checkbox"]:checked::before {
+  content: "\2714";
+  font-size: 0.875em;
+  color: var(--white);
+  position: relative;
+  top: -0.1875rem;
+  right: -0.06rem;
+}
+
+.paragraph {
+  color: var(--gray-100);
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.paragraph-checked {
+  color: var(--gray-100);
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-decoration: line-through;
+}
